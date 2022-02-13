@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>写在前面 | kenggua211的网站</title>
+<link rel="shortcut icon" href="https://kenggua211.github.io/favicon.ico?v=1644760766781">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://kenggua211.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="写在前面 | kenggua211的网站 - Atom Feed" href="https://kenggua211.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="记忆需要有栖身之所
+在此提醒自我之时也希望裨益他人
+然而人毕竟是不断遗忘的，记忆将在回忆的美化中死亡，变成纯粹私人的物件
+我希望这个网站可以维护到我大学毕业
+在青春刚刚诞生之时于此写下他的墓志铭
+鲁迅曾经写下他的坟
+而我寄希望这里可以同样的..." />
+    <meta name="keywords" content="杂想" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://kenggua211.github.io">
+  <img class="avatar" src="https://kenggua211.github.io/images/avatar.png?v=1644760766781" alt="">
+  </a>
+  <h1 class="site-title">
+    kenggua211的网站
+  </h1>
+  <p class="site-description">
+    一个活在自己臆想世界里的人
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              写在前面
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-02-10
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://kenggua211.github.io/tag/kTrmHGblf/" class="post-tag">
+                  # 杂想
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>记忆需要有栖身之所<br>
+在此提醒自我之时也希望裨益他人<br>
+然而人毕竟是不断遗忘的，记忆将在回忆的美化中死亡，变成纯粹私人的物件</p>
+<p>我希望这个网站可以维护到我大学毕业<br>
+在青春刚刚诞生之时于此写下他的墓志铭<br>
+鲁迅曾经写下他的坟<br>
+而我寄希望这里可以同样的生满野草</p>
+<p>陌生人啊<br>
+如果你到这里来<br>
+谢谢你献上这一束花</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://kenggua211.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
