@@ -1,0 +1,12 @@
+# Rust
+target/
+Cargo.lock
+templates/
+*.typ
+# 字体文件（可选，看你是否要提交字体）
+assets/fonts/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.swp
