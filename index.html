@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenggua Bookshelf</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f4f4f7;
+      color: #222;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 2rem;
+      font-weight: 600;
+    }
+    .book-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .book {
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+      min-width: 200px;
+    }
+    .book:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Kenggua’s Bookshelf</h1>
+  <div class="book-list">
+    <a class="book" href="./docs/rust_embedded/dist/">
+      <h2>Rust Embedded</h2>
+      <p>嵌入式 Rust 学习笔记</p>
+    </a>
+    <!-- 未来可以在这里添加更多书籍 -->
+    <!-- <a class="book" href="./docs/embedded_linux/dist/"><h2>Embedded Linux</h2><p>嵌入式 Linux 开发指南</p></a> -->
+  </div>
+  <footer>
+    © 2025 Kenggua · Powered by <a href="https://github.com/qrwteyrutiyoup/shiroa" target="_blank">Shiroa</a>
+  </footer>
+</body>
+</html>
